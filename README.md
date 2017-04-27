@@ -9,19 +9,18 @@ My Semantic Version schema can be represented like `PUBLIC_API.BACKWARDS_INCOMPA
 
 Given `1.0.0.0` as the first version for a **_Production Release_**:
 
-* **BUG_FIX**:
-    + _Security Fix(es)_ will increment version to `1.0.0.1`.
-    + _Bug Fix(es)_ will increment version to `1.0.0.1`.
-* **CODE_IMPROVMENT**:
-    + _New Features_ will increment version to `1.0.1.0`.
-    + _Refracting Code_ that do not impact _Public Api_ will increment version to `1.0.1.0`.
-    + _Deprecating Code_ that do not impact _Public Api_ will increment version to `1.0.1.0`.
-    + _Removing Code_ that do not impact _Public Api_ will increment version to `1.0.1.0`.
-* **BACKWARDS_INCOMPATIBLE**:
-    + _Any Breaking Code Change_ will increment version to `1.1.0.0`.
-*  **PUBLIC_API**:
-    + _Major Code Overhaul_ that impacts a significant number of end points in the _Public Api_ will increment
-        version to `2.0.0.0`.
+* **Release**
+    + is incremented when changing the API, changing the UX, switching to a new recommended version or ending support for previous versions,
+    + version `1.0.0.0` to `2.0.0.0`.
+* **Incompatible**
+    + is incremented when adding, changing or removing code while breaking compatibility with previous versions or changing the UX,
+    + version `1.0.0.0` to `2.0.0.0`.
+* **Compatible**
+    + is incremented when adding, changing or removing code while remaining compatible with previous versions,
+    + version `1.0.0.0` to `2.0.0.0`.
+*  **Fix**
+    + is incremented when a bug is fixed, or a security gap is solved.
+    + version `1.0.0.0` to `2.0.0.0`.
 
 
 ## Conclusion
