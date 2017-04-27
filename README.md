@@ -1,11 +1,11 @@
-# Semantic Versioning Specification
+# Explicit Versioning Specification
 
 To know why I am not using [SemVer]((http://semver.org/)) please see [here](WHY.md).
 
 
 ## Specification
 
-My Semantic Version schema can be represented like `PUBLIC_API.BACKWARDS_INCOMPATIBLE.CODE_IMPROVMENT.BUG_FIX`.
+My Explicit Version schema can be represented like `Release.Incompatible.Compatible.Fix`.
 
 Given `1.0.0.0` as the first version for a **_Production Release_**:
 
