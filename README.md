@@ -29,3 +29,4 @@ Given `1.0.0.0` as the first version for a **_Production Release_**:
 Basically I only miss from [SemVer]((http://semver.org/)) version schema the possibility to isolate
 **_Backwards Incompatible_** changes and consequently a better isolation for when I should increment their `MAJOR`
 version number.
+ 
