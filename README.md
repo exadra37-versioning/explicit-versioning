@@ -13,7 +13,7 @@ Given `1.0.0.0` as the first version for a **_Production Release_**:
     + is incremented when changing the API, changing the UX, switching to a new recommended version or ending support for previous versions,
     + version `1.0.0.0` to `2.0.0.0`.
 * **Incompatible**
-    + is incremented when adding, changing or removing code while breaking compatibility with previous versions or changing the UX,
+    + is incremented when adding, changing, removing code or changing the UX while breaking compatibility with previous versions,
     + version `1.0.0.0` to `1.1.0.0`.
 * **Compatible**
     + is incremented when adding, changing or removing code while remaining compatible with previous versions,
