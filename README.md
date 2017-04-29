@@ -8,12 +8,13 @@ breaking changes, by using an extra required identifier to handle Incompatible c
 
 # Specification Schema
 
-Explicit Versioning specification will use a schema that can be represented like:
+Explicit Versioning specification will use a schema composed of 4 identifiers, that are represented like:
 
 * **Release**.**Incompatible**.**Compatible**.**Fix**-*Optional_Identifiers*
 
-
 ## Required Identifiers
+
+Creating a Tag, by incremented any of the 4 required identifiers, represents a new Software Release.
 
 Given `1.0.0.0` as the first version for a **_Production Release_**:
 
