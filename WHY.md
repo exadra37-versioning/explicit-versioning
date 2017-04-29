@@ -22,6 +22,13 @@ So in my point of view the `MAJOR` should only be used to go from `1.1.0` to `2.
 For me something to handle changes that are **_Backwards Incompatible_** is missing between `MAJOR` and `MINOR`.
 
 
+## A different angle
+
+We, as developers, are preaching to write easy to understand code that is more difficutl to misunderstand and uses variable numbers that help enforce that, trying to make the code as explicit as possible. 
+
+But when it comes to versioning, we're doing the complete opposite of what we're asking others to do. And that creates confusion, which leads to lots of misunderstandings which lead to misuse on a large scale. *Simply put, ilogic.*
+
+
 ## An Example
 
 I use Laravel Framework professionally in a daily base, so I will use it as example to show as one that does not follow the [SemVer]((http://semver.org/)) version schema, or if you prefer, it works around it when needs to release changes that are **_Backwards Incompatible_**.
