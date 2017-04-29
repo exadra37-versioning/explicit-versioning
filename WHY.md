@@ -26,7 +26,7 @@ For me something to handle changes that are **_Backwards Incompatible_** is miss
 
 We, as developers, are preaching to write easy to understand code that is more difficutl to misunderstand and uses variable numbers that help enforce that, trying to make the code as explicit as possible. 
 
-But when it comes to versioning, we're doing the complete opposite of what we're asking others to do. And that creates confusion, which leads to lots of misunderstandings which lead to misuse on a large scale. *Simply put, ilogic.*
+But when it comes to versioning, we're doing the complete opposite of what we're asking others to do. And that creates confusion, which leads to lots of misunderstandings which lead to misuse on a large scale. *Simply put, it's ilogic.*
 
 
 ## An Example
