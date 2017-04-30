@@ -10,7 +10,7 @@ breaking changes, by using an extra required identifier to handle Incompatible c
 
 Explicit Versioning specification will use a schema composed of 4 identifiers, that are represented like:
 
-* **Release**.**Incompatible**.**Compatible**.**Fix**-*Optional_Identifiers*
+* **Disruptive**.**Incompatible**.**Compatible**.**Fix**-*Optional_Identifiers*
 
 ## Required Identifiers
 
@@ -18,19 +18,21 @@ Creating a Tag, by incremented any of the 4 required identifiers, represents a n
 
 Given `1.0.0.0` as the first version for a **_Production Release_**:
 
-* **Release**
-    + is incremented when changing the API, changing the UX, switching to a new recommended version or ending support
-        for previous versions.
+* **Disruptive**
+    + is incremented when deep changes will occur across the API, Web or CLI Interfaces in a way that will disrupt the
+        previous User Experience.
     + version will go from `1.0.0.0` to `2.0.0.0`.
 * **Incompatible**
-    + is incremented when adding, changing, removing code or changing the UX while breaking compatibility with previous
-        versions.
+    + is incremented when a *Intentional* and backwards Incompatible change is introduced as part of a bug or security
+        fix, while keeping the affected User Experience localized in a specific Feature of the API, Web or CLI Interfaces.
     + version will go from `1.0.0.0` to `1.1.0.0`.
 * **Compatible**
-    + is incremented when adding, changing or removing code while remaining compatible with previous versions.
+    + is incremented when adding or improving functionality in a compatible way with previous User Experience when using
+        the API, Web or CLI Interfaces.
     + version will go from `1.0.0.0` to `1.0.1.0`.
 *  **Fix**
-    + is incremented when a bug is fixed, or a security gap is solved.
+    + is incremented when a bug is fixed, or a security gap is solved without affecting the previous User Experience for
+        using the API, Web or CLI Interfaces.
     + version will go from `1.0.0.0` to `1.0.0.1`.
 
 >**NOTE**:
