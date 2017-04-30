@@ -22,13 +22,6 @@ So in my point of view the `MAJOR` should only be used to go from `1.1.0` to `2.
 For me something to handle changes that are **_Backwards Incompatible_** is missing between `MAJOR` and `MINOR`.
 
 
-## A different angle
-
-We, as developers, are preaching to write easy to understand code that is more difficutl to misunderstand and uses variable names that help enforce that, trying to make the code as explicit as possible. 
-
-But when it comes to versioning, we're doing the complete opposite of what we're asking others to do. And that creates confusion, which leads to lots of misunderstandings which lead to misuse on a large scale. *Simply put, it's illogical.*
-
-
 ## An Example
 
 I use Laravel Framework professionally in a daily base, so I will use it as example to show as one that does not follow the [SemVer]((http://semver.org/)) version schema, or if you prefer, it works around it when needs to release changes that are **_Backwards Incompatible_**.
@@ -63,6 +56,13 @@ For me the solution, in my personal projects, is to use from now on this schema 
 Why I have changed the names... because if I want a **Semantic Versioning** schema, the names for each version number must reflect better what they represent, without further explanations.
 
 So when introducing a change that is **_Backwards Incompatible_** I will go from `1.0.1.1` to `1.1.0.0`, instead of the current [SemVer]((http://semver.org/)) practice of going from `1.1.1` to `2.0.0`.
+
+
+## A different angle
+
+We, as developers, are preaching to write easy to understand code that is more difficutl to misunderstand and uses variable names that help enforce that, trying to make the code as explicit as possible. 
+
+But when it comes to versioning, we're doing the complete opposite of what we're asking others to do. And that creates confusion, which leads to lots of misunderstandings which lead to misuse on a large scale. *Simply put, it's illogical.*
 
 
 ## Conclusion
