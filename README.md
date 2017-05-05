@@ -3,7 +3,7 @@
 To know why another Software Versioning Schema exists as an alternative to [SemVer]((http://semver.org/)) please read [here](WHY.md).
 
 Explicit Versioning is a specification for developers that care about releasing software and explicit announce intended
-breaking changes, by using an extra required identifier to handle Incompatible changes that are intentional.
+breaking changes, by using an extra required identifier to handle **[Incompatible](TERMS_SCOPE.md#incompatible)** changes that are intentional.
 
 
 # Specification Schema
@@ -18,19 +18,19 @@ Creating a Tag, by incremented any of the 4 required identifiers, represents a n
 
 Given `1.0.0.0` as the first version for a **_Production Release_**:
 
-* **Disruptive**
-    + is incremented when deep changes will occur across the API, Web or CLI Interfaces in a way that will disrupt the
-        previous User Experience.
+* **[Disruptive](TERMS_SCOPE.md#disruptive)**
+    + is incremented when deep changes will occur across the API, Web or CLI Interfaces in a way that will be **Disruptive**
+        for the previous User Experience.
     + version will go from `1.0.0.0` to `2.0.0.0`.
-* **Incompatible**
-    + is incremented when a *Intentional* and backwards Incompatible change is introduced as part of a bug or security
+* **[Incompatible](TERMS_SCOPE.md#incompatible)**
+    + is incremented when a _Intentional_ and backwards **Incompatible** change is introduced as part of a bug or security
         fix, while keeping the affected User Experience localized in a specific Feature of the API, Web or CLI Interfaces.
     + version will go from `1.0.0.0` to `1.1.0.0`.
-* **Compatible**
-    + is incremented when adding or improving functionality in a compatible way with previous User Experience when using
+* **[Compatible](TERMS_SCOPE.md#compatible)**
+    + is incremented when adding or improving functionality in a **Compatible** way with previous User Experience when using
         the API, Web or CLI Interfaces.
     + version will go from `1.0.0.0` to `1.0.1.0`.
-*  **Fix**
+*  **[Fix](TERMS_SCOPE.md#fix)**
     + is incremented when a bug is fixed, or a security gap is solved without affecting the previous User Experience for
         using the API, Web or CLI Interfaces.
     + version will go from `1.0.0.0` to `1.0.0.1`.
@@ -45,37 +45,69 @@ Given `1.0.0.0` as the first version for a **_Production Release_**:
 Each team of Developers and Organization may have specific needs in their Software release process that they can address
 with the Optional Identifiers.
 
-### Optional Identifiers are not intended to be used for:
+### Recommended:
+
+* **[Alpha](TERMS_SCOPE.md#alpha)**
+    + Unstable Release to gather earlier user feedback in the Development process.
+    + Tags will look `1.0.0.0-Alpha1`, `1.0.0.0-Alpha2`...
+
+* **[Beta](TERMS_SCOPE.md#beta)**
+    + Experimental Release to test viability and get user feedback.
+    + Tags will look `1.0.0.0-Beta1`, `1.0.0.0-Beta2`...
+
+* **[RC - Release Candidate](TERMS_SCOPE.md#rc-or-release-candidate)**
+    + A stable release to get user feedback and hunt last minute bugs.
+    + Tags will look like `1.0.0.0-RC1`, `1.0.0.0-RC2`...
+
+* **[LTS - Long Term Support](TERMS_SCOPE.md#lts-or-long-term-support)**
+    + A release that guarantees the software will be supported until a certain date, using the format `LTS_YYYY-MM`.
+    + Tag `1.0.0.0-LTS_2019-05`
+        - guarantees support until May of 2019 for any [Incompatible](TERMS_SCOPE.md#incompatible), [Compatible](TERMS_SCOPE.md#compatible)
+            or [Fix](TERMS_SCOPE.md#fix) Release.
+        - to be required as `1.*`.
+    + Tag `1.1.0.0-LTS_2019-05`
+        - guarantees support until May of 2019 for any [Compatible](TERMS_SCOPE.md#compatible) or [Fix](TERMS_SCOPE.md#fix) Release.
+        - to be required as `1.1.*`.
+    + Tag `1.0.1.0-LTS_2019-05`
+        - guarantees support until May of 2019 for any [Fix](TERMS_SCOPE.md#fix) Release.
+        - to be required as `1.0.1.*`.
+
+* **[EOS - End of Support](TERMS_SCOPER.md#eos-or-end-of-support)**
+    + A Release to announce the termination of support for a Software Life Cycle.
+    + MUST NOT be used when already exists a _LTS_ Release for this Software Life Cycle.
+    + Given that the last tag was `1.0.8.22`:
+        - the End of Support tag will be `1.0.9.0-EOS_2018-05`.
+        - guarantees support for Security and Bug _Fixes_ Releases until May of 2018.
+        - to be required as `1.0.9.*`.
+        - in any tag from `1.*` MUST NOT exist a _LTS_ Release.
+
+### MAY be used to:
+
+* Give a name to the Release, like `1.0.0.0-Xenial_Xerus`.
+* Track the build, like `1.0.1.0-Build_12345`.
+* For other wisely chosen situations, that should be Explicit and not Implicit.
+
+### MUST NOT be used to:
 
 * Announce a Major release.
 * Breaking change release.
 * New Feature release.
 * Security release.
 * Patch release.
+* To identify a Developer. Use branches instead.
 * Any other situation that clashes with the Required Identifiers implementation.
 
-### Optional Identifiers Usage Examples
-
-#### Targeting `2.0.0.0` Production Release:
-
-* `2.0.0.0-Alpha3` - where 3 is the third Alpha Release, that will be incremented until be ready for a Beta Release.
-* `2.0.0.0-Beta1` - where 1 is the first Beta Release, that will be incremented until be ready for a Release Candidate.
-* `2.0.0.0-RC2` - where 2 is the second Release Candidate, that will be incremented until be ready for a Production Release.
-
-#### Other Usage Examples:
-
-* `1.0.0.8-Build_12345` - When for some reason the Build number needs to be associated with the release.
-* `1.0.1.0-Release_Name` - For when Teams/Organizations like to give a Human name to their releases that normally are
-    associated with a Project/Milestone.
-
-Remember that Tags can have a message associated with them, therefore Optional Identifiers MUST_NOT be used for that purpose.
+>**NOTE:**
+>
+> When creating a tag a message can be added, therefore don't use an Optional Identifier for something that is more
+>   appropriated to be told in the message.
 
 
 # Conclusion
 
-Basically Explicit Versioning main differential factors to [SemVer]((http://semver.org/)) version schema are:
+Basically Explicit Versioning main differential factors to [SemVer](http://semver.org/) versioning schema are:
 
-* the possibility to isolate intentional **_Incompatible_** releases from any other type of Release.
-* only increment the most left number when a Major situation happens in the Software, not to be increment per the
-    minimal backward incompatible change.
-* remove/reduces ambiguity from usage/interpretation of the versioning schema.
+* Isolates any **[Incompatible](TERMS_SCOPE.md#incompatible)** Release, that is _Intentional_, from any other type of Release.
+* Only increment the most left number when a **[Disruptive](TERMS_SCOPE.md#disruptive)** situation happens in the Software, not to be increment per the
+    minimal backward **[Incompatible](TERMS_SCOPE.md#incompatible)** change.
+* Remove/reduces the ambiguity from usage/interpretation of the versioning schema.
