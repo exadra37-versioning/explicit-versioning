@@ -9,7 +9,7 @@ across releases and ensure we obey to the Versioning Specification we use.
     + [When to Tag Software Releases](#when-software-releases-must-be-tagged)
     + [When to use Optional Identifiers](#when-optional-identifiers-should-be-used)
     + [Think Twice](#think-twice-when-a-incompatible-release-is-to)
-    + [Strong Testing Suite](#testing-and-testing-and-more-testing)
+    + [Testing and Testing and more Testing](#testing-and-testing-and-more-testing)
 * [FAQ](FAQ.md)
 * [Terms Scope](TERMS_SCOPE.md)
 * [Why Explicit Versioning](WHY.md)
