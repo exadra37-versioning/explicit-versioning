@@ -4,6 +4,18 @@ As a Developer I like to be Organized as much as possible, this means for me to 
 
 So when I started to use Git and Tag each release after sometime I realised that [SemVer]((http://semver.org/)) is not separating everything as I would like, therefore in my point of view, not fully addressing the problem is trying to solve.
 
+* [HOME - Explicit Versioning](#)
+* [Best Practices](BEST_PRACTICES.md)
+* [FAQ](FAQ.md)
+* [Terms Scope](TERMS_SCOPE.md)
+* [Why Explicit Versioning](WHY.md)
+    + [The Problem](#the-problem)
+    + [An Example](#an-example)
+    + [Considerations](#considerations)
+    + [The Solution](#the-solution)
+    + [A Different Angle](#a-different-angle)
+    + [Conclusion](#conclusion)
+* [Workflow](WORKFLOW.md)
 
 ## The Problem
 
@@ -60,7 +72,7 @@ So when introducing a change that is **_Backwards Incompatible_** I will go from
 
 ## A different angle
 
-We, as developers, are preaching to write easy to understand code that is more difficutl to misunderstand and uses variable names that help enforce that, trying to make the code as explicit as possible. 
+We, as developers, are preaching to write easy to understand code that is more difficult to misunderstand and uses variable names that help enforce that, trying to make the code as explicit as possible.
 
 But when it comes to versioning, we're doing the complete opposite of what we're asking others to do. And that creates confusion, which leads to lots of misunderstandings which lead to misuse on a large scale. *Simply put, it's illogical.*
 
@@ -72,3 +84,6 @@ This are my 2 cents on it and anybody is free to disagree and discuss it.
 I will start to use this new approach in all my personal projects.
 
 Professionally I will continue to follow the Software Development guidelines in place at the Company I work for.
+
+
+[HOME](README.md)

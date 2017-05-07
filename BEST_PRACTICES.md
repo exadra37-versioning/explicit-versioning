@@ -15,6 +15,7 @@ across releases and ensure we obey to the Versioning Specification we use.
 * [Why Explicit Versioning](WHY.md)
 * [Workflow](WORKFLOW.md)
 
+
 ## Software Versioning earlier to Release Fast and to Release Often
 
 With the tools available for Developers to build test suites and automate all the Release process in a Continuous

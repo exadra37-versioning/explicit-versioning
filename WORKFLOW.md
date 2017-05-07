@@ -5,6 +5,16 @@ Versioning with fast interactions between tagging new Releases by following this
 
 Mileage will change per team, project and other factors in the organization.
 
+* [HOME - Explicit Versioning](#)
+* [Best Practices](BEST_PRACTICES.md)
+* [FAQ](FAQ.md)
+* [Terms Scope](TERMS_SCOPE.md)
+* [Why Explicit Versioning](WHY.md)
+* [Workflow](WORKFLOW.md)
+    + [The App Requiremnts](#the-app-requirements)
+    + [Development Workflow](#development-workflow)
+    + [Production Workflow](#production-workflow)
+
 
 ## The App Requirements
 
