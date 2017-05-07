@@ -10,7 +10,7 @@ breaking changes, by using an extra required identifier to handle **[Incompatibl
     + [Specification Schema](#specification-schema)
         - [Required Identifiers](#required-identifiers)
         - [Optional Identifiers](#optional-identifiers)
-    + [Explicit Versioning vs Semantic Versioning](explicit-versioning-vs-semantic-versioning)
+    + [Explicit Versioning vs Semantic Versioning](#explicit-versioning-vs-semantic-versioning)
 * [Best Practices](BEST_PRACTICES.md)
 * [FAQ](FAQ.md)
 * [Terms Scope](TERMS_SCOPE.md)
