@@ -57,3 +57,11 @@ introduced later and may benefit from the feedback received after the Software i
 
 * To avoid involuntary [Incompatible](TERMS_SCOPE.md#incompatible) Releases our Software MUST be covered by a strong suite of tests for Unit, Integration and Acceptance tests.
 * Without a strong suite of tests it will be easy to accidentally tag a [Compatible](TERMS_SCOPE.md#compatible) or [Fix](TERMS_SCOPE.md#fix) Release that will break things.
+
+
+## Worflow
+
+See [this workflow](WORKFLOW.md) for an example that follows this Best Practices for Software Versioning.
+
+
+[HOME](README.md)
