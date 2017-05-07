@@ -3,7 +3,7 @@
 When versioning Software for Development or Production releases we must adhere to some guidelines to keep consistency
 across releases and ensure we obey to the Versioning Specification we use.
 
-* [HOME](README.md)
+* [HOME - Explicit Versioning](README.md)
 * [Best Practices](BEST_PRACTICES.md)
     + [Release Fast and Often](#software-versioning-earlier-to-release-fast-and-torelease-often)
     + [When to Tag Software Releases](#when-software-releases-must-be-tagged)

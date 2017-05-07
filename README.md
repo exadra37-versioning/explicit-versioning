@@ -1,16 +1,14 @@
 # Explicit Versioning
 
-To know why another Software Versioning Schema exists as an alternative to [SemVer]((http://semver.org/)) please read [here](WHY.md).
-
 Explicit Versioning is a specification for developers that care about releasing software and explicit announce intended
 breaking changes, by using an extra required identifier to handle **[Incompatible](TERMS_SCOPE.md#incompatible)** changes that are intentional.
 
 
-* [HOME](#)
+* [HOME - Explicit Versioning](#)
     + [Specification Schema](#specification-schema)
         - [Required Identifiers](#required-identifiers)
         - [Optional Identifiers](#optional-identifiers)
-    + [Explicit Versioning vs Semantic Versioning](#explicit-versioning-vs-semantic-versioning)
+    + [Differential Factors](#differential-factors)
 * [Best Practices](BEST_PRACTICES.md)
 * [FAQ](FAQ.md)
 * [Terms Scope](TERMS_SCOPE.md)
@@ -115,13 +113,13 @@ with the Optional Identifiers.
 >   appropriated to be told in the message.
 
 
-# Explicit Versioning vs Semantic Versioning
+# Differential Factors
 
-The most known specification for Semantic Versioning is [SemVer](http://semver.org/), but many other ones exist, due to the nature of Semantic Versioning approach to Software Versioning.
+Explicit Versioning is as an [alternative](WHY.md) to Semantic Versioning, better known as [SemVer](http://semver.org/).
 
-Basically Explicit Versioning main differential factors to Semantic Versioning schema are:
+The main differential factors are:
 
-* Isolates any **[Incompatible](TERMS_SCOPE.md#incompatible)** Release, that is _Intentional_, from any other type of Release, by using 4 identifiers `v.x.y.z`, instead of the 3 ones of Semantic Versioning `x.y.z`.
+* Isolates any **[Incompatible](TERMS_SCOPE.md#incompatible)** Release, that is _Intentional_, from any other type of Release, by using 4 identifiers `w.x.y.z`, instead of the 3 ones of Semantic Versioning `x.y.z`.
 * Only increment the most left number when a **[Disruptive](TERMS_SCOPE.md#disruptive)** situation happens in the Software, not to be increment per the
     minimal backward **[Incompatible](TERMS_SCOPE.md#incompatible)** change.
 * Remove/reduces the ambiguity from usage/interpretation of the versioning schema. A good example why Semantic Versioning has this issue is the amount of different versioning schemas redefining the meaning of their 3 identifiers `x.y.z`.
