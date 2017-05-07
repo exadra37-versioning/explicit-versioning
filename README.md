@@ -122,5 +122,4 @@ The main differential factors are:
 * Isolates any **[Incompatible](TERMS_SCOPE.md#incompatible)** Release, that is _Intentional_, from any other type of Release, by using 4 identifiers `w.x.y.z`, instead of the 3 ones of Semantic Versioning `x.y.z`.
 * Only increment the most left number when a **[Disruptive](TERMS_SCOPE.md#disruptive)** situation happens in the Software, not to be increment per the
     minimal backward **[Incompatible](TERMS_SCOPE.md#incompatible)** change.
-* Remove/reduces the ambiguity from usage/interpretation of the versioning schema. A good example why Semantic Versioning has this issue is the amount of different versioning schemas redefining the meaning of their 3 identifiers `x.y.z`.
-
+* Remove/reduces/avoids the ambiguity from usage/interpretation of the versioning schema by being **Explicit** instead of **Implicit** as Semantic Versioning his.
