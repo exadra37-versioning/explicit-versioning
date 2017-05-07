@@ -6,6 +6,18 @@ Explicit Versioning is a specification for developers that care about releasing 
 breaking changes, by using an extra required identifier to handle **[Incompatible](TERMS_SCOPE.md#incompatible)** changes that are intentional.
 
 
+* [HOME](#)
+    + [Specification Schema](#specification-schema)
+        - [Required Identifiers](#required-identifiers)
+        - [Optional Identifiers](#optional-identifiers)
+    + [Explicit Versioning vs Semantic Versioning](explicit-versioning-vs-semantic-versioning)
+* [Best Practices](BEST_PRACTICES.md)
+* [FAQ](FAQ.md)
+* [Terms Scope](TERMS_SCOPE.md)
+* [Why Explicit Versioning](WHY.md)
+* [Workflow](WORKFLOW.md)
+
+
 # Specification Schema
 
 Explicit Versioning specification will use a schema composed of 4 identifiers, that are represented like:
@@ -103,11 +115,14 @@ with the Optional Identifiers.
 >   appropriated to be told in the message.
 
 
-# Conclusion
+# Explicit Versioning vs Semantic Versioning
 
-Basically Explicit Versioning main differential factors to [SemVer](http://semver.org/) versioning schema are:
+The most known specification for Semantic Versioning is [SemVer](http://semver.org/), but many other ones exist, due to the nature of Semantic Versioning approach to Software Versioning.
 
-* Isolates any **[Incompatible](TERMS_SCOPE.md#incompatible)** Release, that is _Intentional_, from any other type of Release.
+Basically Explicit Versioning main differential factors to Semantic Versioning schema are:
+
+* Isolates any **[Incompatible](TERMS_SCOPE.md#incompatible)** Release, that is _Intentional_, from any other type of Release, by using 4 identifiers `v.x.y.z`, instead of the 3 ones of Semantic Versioning `x.y.z`.
 * Only increment the most left number when a **[Disruptive](TERMS_SCOPE.md#disruptive)** situation happens in the Software, not to be increment per the
     minimal backward **[Incompatible](TERMS_SCOPE.md#incompatible)** change.
-* Remove/reduces the ambiguity from usage/interpretation of the versioning schema.
+* Remove/reduces the ambiguity from usage/interpretation of the versioning schema. A good example why Semantic Versioning has this issue is the amount of different versioning schemas redefining the meaning of their 3 identifiers `x.y.z`.
+
