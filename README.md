@@ -79,7 +79,7 @@ with the Optional Identifiers.
         - the End of Support tag will be `1.0.9.0-EOS_2018-05`.
         - guarantees support for Security and Bug _Fixes_ Releases until May of 2018.
         - to be required as `1.0.9.*`.
-        - in any tag from `1.*` MUST NOT exist a _LTS_ Release.
+        - in any tag from `1.*` MUST NOT exist a _LTS_ Release with an expiration date set before the EOS was uploaded.
 
 ### MAY be used to:
 
